@@ -1,0 +1,18 @@
+{
+  "name": "shunde-monitor",
+  "version": "2.0.0",
+  "private": true,
+  "description": "顺德上市公司公告智能监测 — 自动采集28家顺德A股公司公告，AI分析并生成合作机会报告",
+  "scripts": {
+    "start": "node scripts/run.js",
+    "collect": "node scripts/run.js collect",
+    "merge": "node scripts/run.js merge",
+    "analyze": "node scripts/run.js analyze",
+    "score": "node scripts/run.js score",
+    "report": "node scripts/run.js report",
+    "force": "node scripts/run.js --force"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

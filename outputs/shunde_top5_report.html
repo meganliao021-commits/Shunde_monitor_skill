@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>顺德上市公司公告智能监测 — TOP5合作机会分析报告</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#fff;color:#1e293b;line-height:1.7;-webkit-font-smoothing:antialiased}
+.c{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* Header */
+.rh{padding:52px 0 36px;background:#fff;border-bottom:2px solid #1e3a5f}
+.rh .c{text-align:center}
+.rh .badge{display:inline-block;background:#1e3a5f;color:#fff;font-size:12px;font-weight:600;letter-spacing:1px;padding:6px 16px;border-radius:4px;margin-bottom:18px}
+.rh h1{font-size:30px;font-weight:700;color:#0f172a;margin-bottom:8px}
+.rh .subt{font-size:15px;color:#64748b;font-weight:400}
+.rh .mr{margin-top:20px;display:flex;justify-content:center;gap:32px;font-size:13px;color:#94a3b8}
+
+/* Section titles */
+.sttl{padding:44px 0 20px;text-align:center}
+.sttl h2{font-size:22px;font-weight:700;color:#0f172a;margin-bottom:6px}
+.sttl .subt{font-size:14px;color:#94a3b8}
+
+/* Summary */
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:48px}
+.si{background:#f0f4ff;border:1px solid #cbd5e1;border-radius:10px;padding:24px 16px;text-align:center}
+.sn{font-size:28px;font-weight:700;color:#1e3a5f;margin-bottom:4px}
+.sl{font-size:13px;color:#475569;font-weight:500}
+
+/* Cards */
+.card{background:#fff;border:1px solid #cbd5e1;border-radius:12px;margin-bottom:32px;overflow:hidden;box-shadow:0 2px 8px rgba(30,58,95,0.06);transition:box-shadow .2s}
+.card:hover{box-shadow:0 6px 24px rgba(30,58,95,0.1)}
+.card-rank-1{border-left:5px solid #2563eb}
+.card-rank-2{border-left:5px solid #6366f1}
+.card-rank-3{border-left:5px solid #8b5cf6}
+.card-rank-4{border-left:5px solid #0891b2}
+.card-rank-5{border-left:5px solid #0d9488}
+.card-hdr{display:flex;align-items:center;padding:24px 28px;background:#f8fafc;border-bottom:1px solid #e2e8f0;gap:16px}
+.card-icon{font-size:32px;flex-shrink:0}
+.card-co{flex:1}
+.card-co h2{font-size:19px;font-weight:700;color:#0f172a;margin-bottom:8px}
+.co-code{font-size:13px;color:#64748b;font-weight:500}
+.card-tags{display:flex;gap:8px;flex-wrap:wrap}
+.ttag,.stag{display:inline-block;font-size:12px;font-weight:600;padding:4px 12px;border-radius:4px;letter-spacing:.3px}
+.tag-blue{background:#eff6ff;color:#2563eb}
+.tag-amber{background:#fffbeb;color:#b45309}
+.tag-emerald{background:#ecfdf5;color:#059669}
+.tag-rose{background:#fff1f2;color:#e11d48}
+.tag-slate{background:#f1f5f9;color:#475569}
+.stag{background:#eef2ff;color:#4338ca}
+.card-sc{text-align:right;flex-shrink:0}
+.sc-num{font-size:30px;font-weight:800;color:#1e3a5f;line-height:1}
+.card-bd{padding:28px}
+
+.igrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px 24px;margin-bottom:20px}
+.ii{display:flex;flex-direction:column;gap:2px}
+.ii.full{grid-column:1/-1}
+.il{font-size:11px;color:#94a3b8;font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+.iv{font-size:14px;color:#1e293b;font-weight:500}
+.iv.amt{font-weight:700;color:#0f172a}
+
+.prog-bar{height:5px;background:#e2e8f0;border-radius:3px;margin-bottom:6px;overflow:hidden}
+.prog-fill{height:100%;background:linear-gradient(90deg,#2563eb,#6366f1);border-radius:3px;transition:width .6s ease}
+.prog-lbl{font-size:12px;color:#64748b;margin-bottom:20px;font-weight:500}
+
+.sec{margin-bottom:18px}
+.sec h3{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:6px}
+.sec p{font-size:14px;color:#334155;line-height:1.8;text-align:justify}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.rec-box{background:#fefce8;border:1px solid #fde68a;border-radius:8px;padding:18px 22px;margin-top:8px}
+.rec-box h3{color:#854d0e}
+.rec-box p{color:#713f12}
+
+/* Timeline */
+.tl{position:relative;max-width:1000px;margin:0 auto 60px;padding:24px 0}
+.tl::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:#cbd5e1;transform:translateX(-50%)}
+.tl-it{position:relative;width:50%;padding:0 36px 32px}
+.tl-l{left:0;text-align:right}
+.tl-r{left:50%;text-align:left}
+.tl-it::before{content:'';position:absolute;top:10px;width:16px;height:16px;border-radius:50%;background:#2563eb;border:3px solid #fff;box-shadow:0 0 0 3px #2563eb;z-index:1}
+.tl-l::before{right:-8px}
+.tl-r::before{left:-8px}
+.tl-ct{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:18px 20px;transition:box-shadow .2s}
+.tl-ct:hover{box-shadow:0 4px 16px rgba(30,58,95,0.08)}
+.tl-dt{font-size:12px;color:#64748b;font-weight:600;margin-bottom:4px}
+.tl-co{font-size:15px;font-weight:700;color:#0f172a;margin-bottom:2px}
+.tl-pl{font-size:13px;color:#475569;margin-bottom:8px}
+.tl-tg{display:flex;gap:6px;flex-wrap:wrap}
+.tl-l .tl-tg{justify-content:flex-end}
+.tl-r .tl-tg{justify-content:flex-start}
+
+/* Footer */
+.rf{background:#f8fafc;border-top:2px solid #e2e8f0;padding:32px 0;text-align:center;font-size:13px;color:#94a3b8;margin-top:20px}
+.rf .disc{max-width:700px;margin:8px auto 0;font-size:12px;color:#cbd5e1;line-height:1.6}
+
+@media (max-width:768px){
+  .sg{grid-template-columns:repeat(2,1fr)}
+  .igrid{grid-template-columns:1fr 1fr}
+  .ag{grid-template-columns:1fr}
+  .card-hdr{flex-direction:column;text-align:center}
+  .card-sc{text-align:center}
+  .tl::before{left:20px}
+  .tl-it{width:100%;padding-left:56px;padding-right:16px}
+  .tl-l,.tl-r{left:0;text-align:left}
+  .tl-l::before,.tl-r::before{left:12px}
+  .tl-l .tl-tg,.tl-r .tl-tg{justify-content:flex-start}
+}
+</style></head>
+<body>
+<header class="rh"><div class="c">
+  <div class="badge">Shunde Monitor · 智能监测报告</div>
+  <h1>顺德上市公司公告分析</h1>
+  <p class="subt">TOP5 合作机会深度剖析 · 华泰证券营业部业务指引</p>
+  <div class="mr"><span>监测范围：2026-04-15 至 2026-07-14</span><span>覆盖公司：28 家顺德A股上市企业</span><span>分析事件：38 个合并事件</span></div>
+</div></header>
+
+<div class="c">
+  
+    <div class="sttl"><h2>📊 TOP5 概览</h2><p class="subt">按综合评分排序的五大合作机会 · 覆盖 3 类公告类型</p></div>
+    <div class="sg">
+      <div class="si"><div class="sn">5</div><div class="sl">TOP事件</div></div>
+      <div class="si"><div class="sn">144.69 亿元</div><div class="sl">涉及总金额</div></div>
+      <div class="si"><div class="sn">3.80</div><div class="sl">平均评分</div></div>
+      <div class="si"><div class="sn">3</div><div class="sl">公告类型</div></div>
+    </div>
+  
+    <div class="sttl"><h2>📅 事件时间线</h2><p class="subt">TOP5 合作机会事件一览 · 按最新公告日期排序</p></div>
+    <div class="tl"><div class="tl-it tl-l"><div class="tl-ct">
+      <div class="tl-dt">2026-04-16</div>
+      <div class="tl-co">伊之密</div>
+      <div class="tl-pl">委托理财（合并）</div>
+      <div class="tl-tg"><span class="ttag tag-rose">委托理财</span><span class="stag">进行中</span></div>
+    </div></div><div class="tl-it tl-r"><div class="tl-ct">
+      <div class="tl-dt">2026-04-27</div>
+      <div class="tl-co">东箭科技</div>
+      <div class="tl-pl">委托理财（合并）</div>
+      <div class="tl-tg"><span class="ttag tag-rose">委托理财</span><span class="stag">进行中</span></div>
+    </div></div><div class="tl-it tl-l"><div class="tl-ct">
+      <div class="tl-dt">2026-07-01</div>
+      <div class="tl-co">新宝股份</div>
+      <div class="tl-pl">股份回购（合并）</div>
+      <div class="tl-tg"><span class="ttag tag-emerald">股份回购</span><span class="stag">首次草案</span></div>
+    </div></div><div class="tl-it tl-r"><div class="tl-ct">
+      <div class="tl-dt">2026-07-08</div>
+      <div class="tl-co">美的集团</div>
+      <div class="tl-pl">股份回购（合并）</div>
+      <div class="tl-tg"><span class="ttag tag-emerald">股份回购</span><span class="stag">进展</span></div>
+    </div></div><div class="tl-it tl-l"><div class="tl-ct">
+      <div class="tl-dt">2026-07-08</div>
+      <div class="tl-co">海信家电</div>
+      <div class="tl-pl">2022年A股限制性股票激励计划</div>
+      <div class="tl-tg"><span class="ttag tag-blue">股权激励</span><span class="stag">修订/调整</span></div>
+    </div></div></div>
+  <div class="sttl"><h2>🏆 TOP5 事件详情</h2><p class="subt">按综合评分排序，从事件背景到合作机会的完整分析链条</p></div>
+  
+    <div class="card card-rank-1">
+      <div class="card-hdr">
+        <div class="card-icon">🥇</div>
+        <div class="card-co">
+          <h2>美的集团 <span class="co-code">000333</span></h2>
+          <div class="card-tags">
+            <span class="ttag tag-emerald">🔄 股份回购</span>
+            <span class="stag">进展</span>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="sc-num">4.10</div>
+        </div>
+      </div>
+      <div class="card-bd">
+        <div class="igrid">
+          <div class="ii"><span class="il">计划名称</span><span class="iv">股份回购（合并）</span></div>
+          <div class="ii"><span class="il">公告数量</span><span class="iv">4 份</span></div>
+          <div class="ii"><span class="il">金额规模</span><span class="iv amt">130.00 亿元</span></div>
+          <div class="ii"><span class="il">公司市值</span><span class="iv">5524.9 亿元</span></div>
+          <div class="ii"><span class="il">保荐券商</span><span class="iv">华泰联合，赵璐</span></div>
+          <div class="ii"><span class="il">华泰已有业务</span><span class="iv">法人经纪户</span></div>
+          <div class="ii full"><span class="il">公告时间区间</span><span class="iv">2026-05-06 → 2026-07-08</span></div>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:50%"></div></div>
+        <div class="prog-lbl">事件进程：进展</div>
+        <div class="sec"><h3>📋 事件背景</h3><p>美的集团是顺德区民营企业上市公司（市值约5524.9亿元），主营家用电器。近期发布了4份回购相关公告。回购方案按期推进，公司定期披露进展。华泰联合证券为该公司保荐/持续督导券商。华泰已有落地业务：法人经纪户。股份回购是上市公司市值管理的重要手段，体现出公司对自身价值的信心。</p></div>
+        <div class="sec"><h3>⚡ 关键动作</h3><p>美的集团股份回购正在按计划执行中。截至最新公告，公司已累计回购15,740,329股。回购计划占公司总股本约0.21%。回购进展符合方案预期，公司每月初按规定披露回购实施情况。后续将继续按方案在回购期限内择机操作。</p></div>
+        <div class="ag">
+          <div class="sec"><h3>🎯 涉及对象</h3><p>本次股份回购是面向全体股东的市值管理行为，通过减少流通股本提升每股收益（EPS），增强股东价值。若回购股份用于后续股权激励或员工持股计划，则间接惠及激励对象群体，相关员工将在后续计划中成为华泰潜在客户。</p></div>
+          <div class="sec"><h3>💵 金额规模</h3><p>本次回购资金总额不超过1300000万元（130.00亿元），资金来源为公司自有资金。回购规模较大，体现公司较强的现金流实力。</p></div>
+        </div>
+        <div class="sec"><h3>📅 时间节点</h3><p>· 2026-05-06：首份公告<br>· 2026-07-08：最新进展</p></div>
+        <div class="sec"><h3>🤝 合作方信息</h3><p>保荐/持续督导券商：华泰联合，赵璐。华泰联合作为保荐券商，可自然延伸至回购专户和交易执行业务。对接联系人：董秘高书。证券公司负责开立回购专户和执行回购交易，律师事务所出具合规意见，涉及减资还需会计师事务所验资。</p></div>
+        <div class="sec rec-box"><h3>💡 华泰证券合作机会推荐</h3><p>【ToB机会】可争取为公司开立回购专用证券账户，提供回购执行交易服务；本次回购涉及约1300000万元，回购资金管理亦是潜在存款/理财业务机会；华泰可在资金端提供配套金融服务。【ToC机会】回购完成后，若回购股份用于后续股权激励或员工持股计划，相关激励对象将成为华泰潜在客户群体，可提供批量开户、行权融资、减持服务及个人财富管理。【切入路径】以回购专户开立和交易执行为入口，逐步向激励计划托管、员工开户及财富管理等业务延伸。</p></div>
+      </div>
+    </div>
+    <div class="card card-rank-2">
+      <div class="card-hdr">
+        <div class="card-icon">🥈</div>
+        <div class="card-co">
+          <h2>海信家电 <span class="co-code">000921</span></h2>
+          <div class="card-tags">
+            <span class="ttag tag-blue">📈 股权激励</span>
+            <span class="stag">修订/调整</span>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="sc-num">3.91</div>
+        </div>
+      </div>
+      <div class="card-bd">
+        <div class="igrid">
+          <div class="ii"><span class="il">计划名称</span><span class="iv">2022年A股限制性股票激励计划</span></div>
+          <div class="ii"><span class="il">公告数量</span><span class="iv">4 份</span></div>
+          <div class="ii"><span class="il">金额规模</span><span class="iv amt">1.69 亿元</span></div>
+          <div class="ii"><span class="il">公司市值</span><span class="iv">333.6 亿元</span></div>
+          <div class="ii"><span class="il">保荐券商</span><span class="iv">—</span></div>
+          <div class="ii"><span class="il">华泰已有业务</span><span class="iv">暂无</span></div>
+          <div class="ii full"><span class="il">公告时间区间</span><span class="iv">2026-07-08 → 2026-07-08</span></div>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:75%"></div></div>
+        <div class="prog-lbl">事件进程：修订/调整</div>
+        <div class="sec"><h3>📋 事件背景</h3><p>海信家电是顺德区公众企业上市公司（市值约333.6亿元），主营家用电器。近期对已授予激励股份进行回购注销操作，通常因激励对象离职或考核未达标。股权激励是上市公司吸引和留住核心人才的重要工具，顺德区制造业企业在人才竞争中尤为重视激励机制。</p></div>
+        <div class="sec"><h3>⚡ 关键动作</h3><p>海信家电「2022年A股限制性股票激励计划」已进入执行阶段。458名激励对象满足解锁条件，合计5,629,458股限制性股票解除限售。此外，因部分激励对象离职或考核未达标，公司回购注销1,109,442股限制性股票。下一步：剩余激励对象将等待后续解锁期/行权期的考核确认，公司需按计划节奏完成业绩指标核算和相应的公告披露。</p></div>
+        <div class="ag">
+          <div class="sec"><h3>🎯 涉及对象</h3><p>本次激励涉及426名激励对象，覆盖公司核心职能条线。激励计划覆盖研发、销售、制造、管理等核心职能，助于稳定团队、激发活力。具体高管与员工分布可查阅公告中激励对象名单，该名单是华泰开户业务的直接目标客户清单。</p></div>
+          <div class="sec"><h3>💵 金额规模</h3><p>本次激励涉及资金约16888万元（1.69亿元），为激励股份的总价值（股数×授予价/行权价）。按426名激励对象计算，人均激励价值约40万元。属于主流上市公司激励水平。</p></div>
+        </div>
+        <div class="sec"><h3>📅 时间节点</h3><p>· 2026-07-08：解锁条件确认</p></div>
+        <div class="sec"><h3>🤝 合作方信息</h3><p>未在数据库中找到保荐券商信息。本次事件涉及的服务机构：关于海信家电集团股份有限公司2022年A股限制性股票激励计划。华泰证券当前在公司的业务覆盖为空白，建议以本次事件为切入点主动对接。对接联系人：董秘张裕欣。独立财务顾问通常负责方案设计、定价合理性分析和合规审查；律师事务所出具法律意见书；会计师事务所进行业绩考核指标审计。</p></div>
+        <div class="sec rec-box"><h3>💡 华泰证券合作机会推荐</h3><p>【ToB机会】可争取承接激励计划独立财务顾问及激励股份托管业务。【ToC机会】激励对象批量开户（覆盖数百至数千名核心员工）、行权融资服务、解锁后减持经纪与大宗交易撮合、个人财富管理与资产配置。【切入路径】以激励计划托管和开户为入口，联动经纪、资管、财富管理等多业务线，实现从企业到员工的全链条服务覆盖。</p></div>
+      </div>
+    </div>
+    <div class="card card-rank-3">
+      <div class="card-hdr">
+        <div class="card-icon">🥉</div>
+        <div class="card-co">
+          <h2>新宝股份 <span class="co-code">002705</span></h2>
+          <div class="card-tags">
+            <span class="ttag tag-emerald">🔄 股份回购</span>
+            <span class="stag">首次草案</span>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="sc-num">3.85</div>
+        </div>
+      </div>
+      <div class="card-bd">
+        <div class="igrid">
+          <div class="ii"><span class="il">计划名称</span><span class="iv">股份回购（合并）</span></div>
+          <div class="ii"><span class="il">公告数量</span><span class="iv">7 份</span></div>
+          <div class="ii"><span class="il">金额规模</span><span class="iv amt">5000 万元</span></div>
+          <div class="ii"><span class="il">公司市值</span><span class="iv">127.0 亿元</span></div>
+          <div class="ii"><span class="il">保荐券商</span><span class="iv">东莞证券</span></div>
+          <div class="ii"><span class="il">华泰已有业务</span><span class="iv">出借</span></div>
+          <div class="ii full"><span class="il">公告时间区间</span><span class="iv">2026-04-28 → 2026-07-01</span></div>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:25%"></div></div>
+        <div class="prog-lbl">事件进程：首次草案</div>
+        <div class="sec"><h3>📋 事件背景</h3><p>新宝股份是顺德区民营企业上市公司（市值约127亿元），主营家用电器。近期发布了7份回购相关公告。本次为公司主动实施的股份回购，旨在维护公司价值及股东权益。股份回购是上市公司市值管理的重要手段，体现出公司对自身价值的信心。</p></div>
+        <div class="sec"><h3>⚡ 关键动作</h3><p>新宝股份股份回购正在按计划执行中。截至最新公告，公司已累计回购800,000股。回购计划占公司总股本约0.2566%。公司已取得金融机构的股票回购专项贷款承诺函，回购资金来源有保障。回购进展符合方案预期，公司每月初按规定披露回购实施情况。后续将继续按方案在回购期限内择机操作。</p></div>
+        <div class="ag">
+          <div class="sec"><h3>🎯 涉及对象</h3><p>本次股份回购是面向全体股东的市值管理行为，通过减少流通股本提升每股收益（EPS），增强股东价值。若回购股份用于后续股权激励或员工持股计划，则间接惠及激励对象群体，相关员工将在后续计划中成为华泰潜在客户。</p></div>
+          <div class="sec"><h3>💵 金额规模</h3><p>本次回购资金总额不超过5000万元（0.50亿元），资金来源为公司自有资金。回购规模较小，重在向市场传递信心。</p></div>
+        </div>
+        <div class="sec"><h3>📅 时间节点</h3><p>· 2026-04-28：回购方案公告</p></div>
+        <div class="sec"><h3>🤝 合作方信息</h3><p>保荐/持续督导券商：东莞证券。华泰证券当前在公司的业务覆盖为空白，建议以本次事件为切入点主动对接。对接联系人：董秘陈景山。证券公司负责开立回购专户和执行回购交易，律师事务所出具合规意见，涉及减资还需会计师事务所验资。</p></div>
+        <div class="sec rec-box"><h3>💡 华泰证券合作机会推荐</h3><p>【ToB机会】可争取为公司开立回购专用证券账户，提供回购执行交易服务；本次回购涉及约5000万元，回购资金管理亦是潜在存款/理财业务机会；华泰可在资金端提供配套金融服务。【ToC机会】回购完成后，若回购股份用于后续股权激励或员工持股计划，相关激励对象将成为华泰潜在客户群体，可提供批量开户、行权融资、减持服务及个人财富管理。【切入路径】以回购专户开立和交易执行为入口，逐步向激励计划托管、员工开户及财富管理等业务延伸。</p></div>
+      </div>
+    </div>
+    <div class="card card-rank-4">
+      <div class="card-hdr">
+        <div class="card-icon">4️⃣</div>
+        <div class="card-co">
+          <h2>伊之密 <span class="co-code">300415</span></h2>
+          <div class="card-tags">
+            <span class="ttag tag-rose">💰 委托理财</span>
+            <span class="stag">进行中</span>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="sc-num">3.70</div>
+        </div>
+      </div>
+      <div class="card-bd">
+        <div class="igrid">
+          <div class="ii"><span class="il">计划名称</span><span class="iv">委托理财（合并）</span></div>
+          <div class="ii"><span class="il">公告数量</span><span class="iv">1 份</span></div>
+          <div class="ii"><span class="il">金额规模</span><span class="iv amt">7.50 亿元</span></div>
+          <div class="ii"><span class="il">公司市值</span><span class="iv">101.5 亿元</span></div>
+          <div class="ii"><span class="il">保荐券商</span><span class="iv">华泰联合，于首祥，袁琳翕</span></div>
+          <div class="ii"><span class="il">华泰已有业务</span><span class="iv">5%股东股份托管、回购、股权激励</span></div>
+          <div class="ii full"><span class="il">公告时间区间</span><span class="iv">2026-04-16 → 2026-04-16</span></div>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:50%"></div></div>
+        <div class="prog-lbl">事件进程：进行中</div>
+        <div class="sec"><h3>📋 事件背景</h3><p>伊之密是顺德区民营企业上市公司（市值约101.5亿元），主营机械设备。近期发布了1份委托理财公告，利用闲置资金进行现金管理，提升资金使用效率。华泰联合证券为该公司保荐/持续督导券商。华泰已有落地业务：5%股东股份托管、回购、股权激励。委托理财是上市公司提高闲置资金使用效率的常规操作，顺德制造业企业普遍现金流充裕。</p></div>
+        <div class="sec"><h3>⚡ 关键动作</h3><p>伊之密已获得委托理财授权额度7.5亿元，可在额度内循环使用。公司利用闲置自有资金进行现金管理，是提高资金使用效率的常规财务操作。从公告内容看，理财投向可能包括结构性存款、银行理财等稳健型产品。本次公告为该期间内理财操作的汇总披露，公司定期发布此类公告以保持信息透明度。后续：公司将继续在授权额度内滚动认购理财产品，保持闲置资金的高效运作。</p></div>
+        <div class="ag">
+          <div class="sec"><h3>🎯 涉及对象</h3><p>委托理财属于公司财务运营层面的资金管理行为，受益方为公司整体及全体股东。通过提高闲置资金使用效率，可为公司创造额外财务收益。从业务拓展角度，财务决策者（财务总监、董秘）是高净值个人客户的重要来源。</p></div>
+          <div class="sec"><h3>💵 金额规模</h3><p>本次委托理财涉及金额约75000万元（7.50亿元）。大额资金运作，反映公司闲置资金充裕、现金管理需求旺盛。</p></div>
+        </div>
+        <div class="sec"><h3>📅 时间节点</h3><p>· 2026-04-16：首笔认购</p></div>
+        <div class="sec"><h3>🤝 合作方信息</h3><p>保荐/持续督导券商：华泰联合，于首祥，袁琳翕。华泰联合作为保荐券商，可自然延伸至机构理财产品推荐业务。对接联系人：董秘肖德银。公司内部由财务部门主导，对外合作方为受托金融机构（银行/券商/信托），需签署理财协议并披露受托方信息。</p></div>
+        <div class="sec rec-box"><h3>💡 华泰证券合作机会推荐</h3><p>【ToB机会】公司闲置资金充裕，可推荐券商收益凭证、资管计划、报价式回购等替代银行理财产品，争取机构现金管理业务。【ToC机会】通过现金管理业务建立与财务高管关系后，可延伸推荐私人银行、家族信托、大额资产配置等高端个人财富管理服务。【切入路径】以差异化理财产品推荐为切入点，逐步建立机构业务合作关系后向个人业务延伸。</p></div>
+      </div>
+    </div>
+    <div class="card card-rank-5">
+      <div class="card-hdr">
+        <div class="card-icon">5️⃣</div>
+        <div class="card-co">
+          <h2>东箭科技 <span class="co-code">300978</span></h2>
+          <div class="card-tags">
+            <span class="ttag tag-rose">💰 委托理财</span>
+            <span class="stag">进行中</span>
+          </div>
+        </div>
+        <div class="card-sc">
+          <div class="sc-num">3.45</div>
+        </div>
+      </div>
+      <div class="card-bd">
+        <div class="igrid">
+          <div class="ii"><span class="il">计划名称</span><span class="iv">委托理财（合并）</span></div>
+          <div class="ii"><span class="il">公告数量</span><span class="iv">1 份</span></div>
+          <div class="ii"><span class="il">金额规模</span><span class="iv amt">5.00 亿元</span></div>
+          <div class="ii"><span class="il">公司市值</span><span class="iv">49.7 亿元</span></div>
+          <div class="ii"><span class="il">保荐券商</span><span class="iv">中信证券</span></div>
+          <div class="ii"><span class="il">华泰已有业务</span><span class="iv">法人开户、机构理财、行知产业圈</span></div>
+          <div class="ii full"><span class="il">公告时间区间</span><span class="iv">2026-04-27 → 2026-04-27</span></div>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width:50%"></div></div>
+        <div class="prog-lbl">事件进程：进行中</div>
+        <div class="sec"><h3>📋 事件背景</h3><p>东箭科技是顺德区民营企业上市公司（市值约49.7亿元），主营汽车。近期发布了1份委托理财公告，利用闲置资金进行现金管理，提升资金使用效率。华泰已有落地业务：法人开户、机构理财、行知产业圈。委托理财是上市公司提高闲置资金使用效率的常规操作，顺德制造业企业普遍现金流充裕。</p></div>
+        <div class="sec"><h3>⚡ 关键动作</h3><p>东箭科技已获得委托理财授权额度5亿元，可在额度内循环使用。公司利用闲置自有资金进行现金管理，是提高资金使用效率的常规财务操作。近期共完成1笔理财产品认购，主要投向收益凭证、信托计划、结构性存款。后续：公司将继续在授权额度内滚动认购理财产品，保持闲置资金的高效运作。</p></div>
+        <div class="ag">
+          <div class="sec"><h3>🎯 涉及对象</h3><p>委托理财属于公司财务运营层面的资金管理行为，受益方为公司整体及全体股东。通过提高闲置资金使用效率，可为公司创造额外财务收益。从业务拓展角度，财务决策者（财务总监、董秘）是高净值个人客户的重要来源。</p></div>
+          <div class="sec"><h3>💵 金额规模</h3><p>本次委托理财涉及金额约50000万元（5.00亿元）。中等规模资金运作，属常规财务安排。</p></div>
+        </div>
+        <div class="sec"><h3>📅 时间节点</h3><p>· 2026-04-27：首笔认购</p></div>
+        <div class="sec"><h3>🤝 合作方信息</h3><p>保荐/持续督导券商：中信证券。华泰已有部分业务基础（法人开户、机构理财、行知产业圈），可在此基础上进一步拓展。对接联系人：董秘顾玲。公司内部由财务部门主导，对外合作方为受托金融机构（银行/券商/信托），需签署理财协议并披露受托方信息。</p></div>
+        <div class="sec rec-box"><h3>💡 华泰证券合作机会推荐</h3><p>【ToB机会】公司闲置资金充裕，可推荐券商收益凭证、资管计划、报价式回购等替代银行理财产品，争取机构现金管理业务。【ToC机会】通过现金管理业务建立与财务高管关系后，可延伸推荐私人银行、家族信托、大额资产配置等高端个人财富管理服务。【切入路径】以差异化理财产品推荐为切入点，逐步建立机构业务合作关系后向个人业务延伸。</p></div>
+      </div>
+    </div>
+</div>
+
+<footer class="rf"><div class="c">
+  <p>顺德上市公司公告智能监测系统 (Shunde Monitor)</p>
+  <p class="disc">本报告由AI自动生成，数据来源于上市公司公开公告，仅供参考，不构成投资建议或业务承诺。<br>分析结果基于公告文本的结构化抽取与规则引擎，实际业务决策请结合人工判断。</p>
+  <p style="margin-top:8px;font-size:11px;color:#cbd5e1">生成时间：2026/7/16 10:19:53</p>
+</div></footer>
+</body></html>

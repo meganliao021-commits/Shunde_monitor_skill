@@ -1,0 +1,10 @@
+{
+  "_comment": "首次运行时如路径为 'auto' 则自动检测，也可手动填写绝对路径",
+  "workbuddyHome": "auto",
+  "workbuddyInstallDir": "auto",
+  "westockScript": "auto",
+  "search": {
+    "monthsBack": 3,
+    "noticeLimit": 50
+  }
+}
